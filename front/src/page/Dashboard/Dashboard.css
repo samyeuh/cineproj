@@ -1,0 +1,320 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.app-title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Nouveau style dark et moderne pour Dashboard */
+.dashboard-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--color-surface);
+  padding: 2.5rem 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--color-card-shadow);
+  text-align: center;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-subtitle {
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+}
+
+.search-container {
+  margin-bottom: 40px;
+  background: var(--color-surface-alt);
+  border-radius: var(--border-radius);
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.search-title {
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+  color: var(--color-accent);
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-form input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-text);
+  font-size: 1.1rem;
+  flex: 1;
+}
+
+.search-form button {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.search-form button:hover {
+  background: var(--color-primary-hover);
+}
+
+.search-results {
+  margin-top: 22px;
+  list-style: none;
+  padding: 0;
+}
+
+.film-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-surface-alt);
+  padding: 14px 18px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+.film-item:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.film-info {
+  font-weight: 500;
+  font-size: 1.08rem;
+}
+.film-realisateur {
+  color: var(--color-accent);
+  font-size: 0.98rem;
+}
+.film-duree {
+  font-size: 0.98rem;
+  color: var(--color-text-secondary);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.logout-btn, .login-btn {
+  background: var(--color-danger);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s;
+}
+.login-btn {
+  background: var(--color-primary);
+}
+.logout-btn:hover {
+  background: var(--color-danger-hover);
+}
+.login-btn:hover {
+  background: var(--color-primary-hover);
+}
+
+/* Nouveau layout Dashboard : centrage, header, cards, UX moderne */
+.dashboard-bg {
+  min-height: 100vh;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4.5rem;
+}
+.dashboard-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 1.5rem auto;
+  padding-top: 1.5rem;
+}
+.dashboard-logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.dashboard-user-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.dashboard-user {
+  color: var(--color-text-secondary);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.dashboard-card {
+  background: var(--color-surface);
+  border-radius: var(--border-radius);
+  box-shadow: var(--color-card-shadow);
+  padding: 2.5rem 2rem 2rem 2rem;
+  min-width: 350px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.search-input-group {
+  display: flex;
+  align-items: center;
+  background: var(--color-bg-secondary);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--color-border);
+}
+.search-icon {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  margin-right: 0.7rem;
+}
+.dashboard-empty {
+  color: var(--color-danger);
+  font-style: italic;
+  margin: 1.2rem 0;
+}
+.dashboard-films-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-top: 1.5rem;
+}
+.film-card {
+  display: flex;
+  align-items: center;
+  background: var(--color-surface-alt);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.18s, box-shadow 0.18s, color 0.18s;
+  gap: 1.2rem;
+  color: var(--color-text);
+  min-width: 0;
+  overflow: hidden;
+}
+.film-card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-secondary);
+  border-radius: 8px;
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
+  transition: background 0.18s;
+  flex-shrink: 0;
+}
+.film-card-img svg {
+  color: var(--color-primary);
+  font-size: 2.2rem;
+  transition: color 0.18s;
+  flex-shrink: 0;
+}
+.film-card:hover .film-card-img {
+  background: var(--color-surface);
+}
+.film-card:hover .film-card-img svg {
+  color: var(--color-primary);
+  opacity: 1;
+}
+.film-card-info {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.film-card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.film-card-meta {
+  color: var(--color-text-secondary);
+  font-size: 0.98rem;
+  margin-top: 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Bandeau principal, centrage, hover amélioré, accessibilité couleurs */
+.main-banner {
+  width: 100vw;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: #fff;
+  padding: 0.7rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.main-banner-content {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  gap: 0.5rem;
+}
+
+.film-card:hover {
+  background: var(--color-accent);
+  color: #23262f;
+  box-shadow: 0 4px 16px rgba(255,179,71,0.18);
+}
+

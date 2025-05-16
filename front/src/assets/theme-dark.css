@@ -1,0 +1,49 @@
+/* Thème dark global CineProj */
+:root {
+  --color-bg: #181a20;
+  --color-bg-secondary: #23262f;
+  --color-surface: #23262f;
+  --color-surface-alt: #262a36;
+  --color-primary: #4f8cff;
+  --color-primary-hover: #3762b8;
+  --color-accent: #ffb347;
+  --color-danger: #e74c3c;
+  --color-danger-hover: #c0392b;
+  --color-success: #27ae60;
+  --color-success-hover: #219150;
+  --color-border: #31344b;
+  --color-text: #f1f1f1;
+  --color-text-secondary: #b0b3c6;
+  --color-card-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  --border-radius: 12px;
+  --font-main: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 0;
+}
+
+button, input, select {
+  font-family: inherit;
+}
+
+.card {
+  background: var(--color-surface);
+  border-radius: var(--border-radius);
+  box-shadow: var(--color-card-shadow);
+  padding: 2em;
+  color: var(--color-text);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--color-bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-alt);
+  border-radius: 8px;
+}

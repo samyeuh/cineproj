@@ -1,0 +1,9 @@
+@import url('./assets/theme-dark.css');
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 0;
+}

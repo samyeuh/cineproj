@@ -1,0 +1,238 @@
+/* Nouveau style dark et moderne pour CinemaDetails */
+/* Ajout du bandeau principal, centrage, hover accessible, harmonisation UI */
+.main-banner {
+  width: 100vw;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: #fff;
+  padding: 0.7rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.main-banner-content {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  gap: 0.5rem;
+}
+
+.owner-cinemas-page,
+.cinema-details-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  font-family: var(--font-main);
+  background: var(--color-surface);
+  color: var(--color-text);
+  border-radius: var(--border-radius);
+  box-shadow: var(--color-card-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.owner-cinemas-page h1,
+.cinema-details-container h1,
+.cinema-details-container h2 {
+  color: var(--color-primary);
+  margin-bottom: 1.2rem;
+}
+
+.cinema-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.cinema-item {
+  padding: 14px;
+  border: 1.5px solid var(--color-border);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: var(--color-surface-alt);
+  transition: background 0.2s, border 0.2s, color 0.2s;
+  color: var(--color-text);
+}
+.cinema-item:hover {
+  background-color: var(--color-accent);
+  color: #23262f;
+  border: 1.5px solid var(--color-accent);
+}
+
+.projections-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+.projections-section li {
+  background-color: var(--color-surface-alt);
+  border-left: 4px solid var(--color-accent);
+  padding: 1rem;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  color: var(--color-text);
+}
+
+.add-projection-section {
+  margin-top: 2.2rem;
+  padding: 1.2rem;
+  border-top: 2px solid var(--color-border);
+  background: var(--color-bg-secondary);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  width: 100%;
+  max-width: 600px;
+}
+.add-projection-section label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: var(--color-accent);
+}
+.add-projection-section input,
+.add-projection-section select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-bg-secondary);
+  color: var(--color-text);
+}
+.days-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.days-checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.98rem;
+  color: var(--color-text-secondary);
+}
+.add-projection-section button {
+  margin-top: 1rem;
+  padding: 12px 24px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.add-projection-section button:hover {
+  background-color: var(--color-primary-hover);
+}
+.film-back-button {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  transition: color 0.2s;
+}
+.film-back-button:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+.logout-btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  background-color: var(--color-danger);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 18px;
+  transition: background 0.2s;
+}
+.logout-btn:hover {
+  background-color: var(--color-danger-hover);
+}
+.add-cinema-btn {
+  background-color: var(--color-success);
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.add-cinema-btn:hover {
+  background-color: var(--color-success-hover);
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: var(--color-surface);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: var(--color-text);
+}
+.modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+.modal-content label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+  color: var(--color-accent);
+}
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-bg-secondary);
+  color: var(--color-text);
+}
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.modal-actions button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.modal-actions button:first-child {
+  background-color: var(--color-success);
+  color: white;
+}
+.modal-actions button:last-child {
+  background-color: var(--color-danger);
+  color: white;
+}
+
